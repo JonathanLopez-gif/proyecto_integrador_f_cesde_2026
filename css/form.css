@@ -1,0 +1,253 @@
+.login {
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    animation: flotar 6s ease-in-out infinite;
+}
+
+.register {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    animation: flotar 6s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+}
+
+/* ======== CONTENEDOR DEL FORMULARIO ======== */
+.form-registro {
+    /* Fondo del formulario con gradiente sutil en tonos oscuros */
+    background: linear-gradient(160deg, #1f1f1f, #2a2a2a);
+
+    /* Borde muy fino y semitransparente para definir el contorno */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Bordes redondeados amplios para suavizar la estructura */
+    border-radius: 16px;
+
+    /* Sombra interior y exterior para efecto de profundidad metálica */
+    box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.05), /* brillo interno suave */
+        0 8px 24px rgba(0, 0, 0, 0.4);        /* sombra externa */
+
+    /* Espaciado interno cómodo */
+    padding: 2rem;
+
+    /* Ancho fijo pero centrado y visualmente equilibrado */
+    width: 340px;
+
+    /* Color de texto en tono gris claro para alto contraste */
+    color: #e5e5e5;
+
+    /* Filtro de desenfoque sutil para dar sensación de vidrio o metal pulido */
+    backdrop-filter: blur(4px);
+
+    /* Transición suave al pasar el cursor */
+    transition: all 0.3s ease;
+}
+
+/* ======== EFECTO HOVER DEL FORMULARIO ======== */
+.form-registro:hover {
+    /* Aumenta ligeramente la sombra externa para simular reflejo metálico */
+    box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.1),
+        0 10px 28px rgba(0, 0, 0, 0.6);
+
+    /* Eleva visualmente el formulario */
+    transform: translateY(-3px);
+}
+
+/* ======== TÍTULO DEL FORMULARIO ======== */
+.form-registro h2 {
+    /* Centrado horizontal */
+    text-align: center;
+
+    /* Separación inferior equilibrada */
+    margin-bottom: 1.5rem;
+
+    /* Color claro para destacar sobre fondo oscuro */
+    color: #f3f4f6;
+
+    /* Peso de fuente fuerte pero no excesivo */
+    font-weight: 600;
+
+    /* Espaciado sutil entre letras */
+    letter-spacing: 0.5px;
+
+    /* Sombra de texto leve para mayor contraste visual */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ======== ETIQUETAS DE LOS CAMPOS ======== */
+.form-registro label {
+    /* Mostrar cada etiqueta en su propia línea */
+    display: block;
+
+    /* Separación respecto al campo siguiente */
+    margin-bottom: 6px;
+
+    /* Peso medio para legibilidad */
+    font-weight: 500;
+
+    /* Color gris claro para buen contraste sin ser demasiado brillante */
+    color: #d1d5db;
+
+    /* Tamaño de fuente más pequeño que el texto principal */
+    font-size: 0.9rem;
+}
+
+/* ======== CAMPOS DE ENTRADA ======== */
+.form-registro input {
+    /* Ocupa todo el ancho del contenedor */
+    width: 100%;
+
+    /* Espaciado interno equilibrado */
+    padding: 10px 12px;
+
+    /* Fondo más oscuro para contrastar con el formulario */
+    background: #141414;
+
+    /* Borde gris metálico sutil */
+    border: 1px solid #3a3a3a;
+
+    /* Bordes redondeados suaves */
+    border-radius: 8px;
+
+    /* Texto blanco para buen contraste */
+    color: #fff;
+
+    /* Tamaño de fuente adecuado para formularios modernos */
+    font-size: 0.95rem;
+
+    /* Transiciones suaves en foco y hover */
+    transition: all 0.25s ease;
+}
+
+/* ======== EFECTO CUANDO EL CAMPO ESTÁ EN FOCO ======== */
+.form-registro input:focus {
+    /* Borde de color violeta moderno al hacer clic */
+    border-color: #818cf8;
+
+    /* Resplandor alrededor del campo para indicar selección activa */
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.25);
+
+    /* Elimina el contorno azul predeterminado del navegador */
+    outline: none;
+}
+
+/* ======== PLACEHOLDER ======== */
+.form-registro input::placeholder {
+    /* Color gris suave, discreto pero visible */
+    color: #9ca3af;
+}
+
+/* ======== BOTÓN PRINCIPAL ======== */
+.form-registro button {
+    /* Ocupa todo el ancho del formulario */
+    width: 100%;
+
+    /* Espaciado interno cómodo */
+    padding: 12px;
+
+    /* Margen superior para separarlo del campo anterior */
+    margin-top: 1.2rem;
+
+    /* Sin borde visible */
+    border: none;
+
+    /* Bordes redondeados consistentes con los campos */
+    border-radius: 8px;
+
+    /* Gradiente moderno entre tonos violeta y azul eléctrico */
+    background: linear-gradient(135deg, #6366f1, #7c3aed);
+
+    /* Texto blanco brillante */
+    color: white;
+
+    /* Fuente ligeramente más grande y con peso */
+    font-weight: 600;
+    font-size: 1rem;
+
+    /* Cursor de mano para indicar clic */
+    cursor: pointer;
+
+    /* Transición suave para el efecto hover */
+    transition: all 0.3s ease;
+}
+
+/* ======== EFECTO HOVER DEL BOTÓN ======== */
+.form-registro button:hover {
+    /* Cambia el gradiente para dar sensación de movimiento metálico */
+    background: linear-gradient(135deg, #4f46e5, #6d28d9);
+
+    /* Eleva ligeramente el botón para más dinamismo */
+    transform: translateY(-2px);
+}
+
+.registro {
+    text-decoration: none;
+    color: white;
+}
+
+/* ======== ANIMACIÓN FADE + ESCALA + REBOTE SUAVE ======== */
+
+/* 
+   Creamos una animación llamada "fadeInBounce".
+   Combina tres efectos:
+   1. Desvanecimiento (fade-in).
+   2. Escalado (crece suavemente al aparecer).
+   3. Ligero rebote (efecto de suavidad al final).
+*/
+@keyframes fadeInBounce {
+
+    /* 
+       Estado inicial:
+       - opacity: 0 → invisible.
+       - transform: translateY(20px) scale(0.96)
+         → desplazado hacia abajo 20px y ligeramente más pequeño.
+       Esto da la sensación de que “entra” desde el fondo.
+    */
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+    }
+
+    /* 
+       Estado intermedio (~80% del tiempo):
+       - opacity: 1 → ya visible.
+       - transform: translateY(-5px) scale(1.02)
+         → se mueve un poco hacia arriba y crece un poco más de su tamaño normal.
+       Este exceso simula un pequeño “rebote” o impulso.
+    */
+    80% {
+        opacity: 1;
+        transform: translateY(-5px) scale(1.02);
+    }
+
+    /* 
+       Estado final:
+       - transform: translateY(0) scale(1)
+         → vuelve a su posición y tamaño natural.
+       Esto estabiliza el movimiento y deja el formulario en su lugar.
+    */
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 
+   Aplicamos la animación al formulario:
+   - Duración: 0.8 segundos (ligeramente más larga que la anterior).
+   - Easing: cubic-bezier(0.25, 0.8, 0.25, 1) → curva personalizada que simula un rebote natural.
+   - La animación ocurre una sola vez al cargar el formulario.
+*/
+.form-registro {
+    animation: fadeInBounce 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}

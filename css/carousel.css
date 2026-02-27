@@ -1,0 +1,28 @@
+/* CONTENEDOR PRINCIPAL */
+.carrusel {
+    width: 800px;                 /* Muestra solo una imagen a la vez */
+    height: 400px;
+    overflow: hidden;             /* Oculta lo que se sale */
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* CONTENEDOR QUE SE DESPLAZA */
+.slider {
+    display: flex;                /* Coloca imágenes en fila */
+    width: calc(600px * 8);       /* 8 imágenes: 4 reales + 4 duplicadas */
+    animation: scroll 20s linear infinite;
+}
+
+/* IMÁGENES */
+.carrusel img {
+    width: 800px;                 /* Cada imagen ocupa todo el carrusel */
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ANIMACIÓN INFINITA */
+@keyframes scroll {
+    from { transform: translateX(0); }                  /* Inicio */
+    to   { transform: translateX(calc(-600px * 4)); }   /* Avanza las 4 imágenes reales */
+}

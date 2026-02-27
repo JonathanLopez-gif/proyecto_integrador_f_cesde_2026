@@ -1,0 +1,61 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABECERA */
+header {
+    /* --- Estructura y posición --- */
+    top: 0;
+    height: 7%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos: uno a la izquierda y otro a la derecha */
+    align-items: center;
+
+    /* --- Espaciado y forma --- */
+    padding: 0; 
+    border-radius: 30px;
+    overflow: hidden; /* Evita que los elementos se salgan de las esquinas redondeadas */
+
+    /* --- Colores y efectos --- */
+    background: linear-gradient(90deg, rgba(255,223,186,0.5), rgba(201,215,176,0.5)); /* Fondo degradado pastel */
+    backdrop-filter: blur(10px); /* Efecto vidrio esmerilado */
+    border-bottom: 2px solid rgba(217,148,68,0.5); /* Línea inferior pastel */
+    box-shadow: 0 4px 12px rgba(50,182,226,0.3); /* Sombra azul celeste */
+}
+
+/* LOGO */
+header .logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b86e2a;
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+}
+
+/* MENU */
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Deja un espacio entre cada enlace */
+    margin-right: 30px;
+}
+
+/* ENLACES */
+header a {
+    color: #3b3b3b;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease; /* Transiciones suaves en hover o cambios de color */
+}
+
+/* EFECTO AL POSICIONAR EL MOUSE */
+header a:hover {
+    color: #cbe971;
+    transform: scale(1.05);
+}
