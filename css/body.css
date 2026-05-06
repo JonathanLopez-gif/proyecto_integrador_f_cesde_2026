@@ -1,7 +1,12 @@
-/* ===== CUERPO PRINCIPAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(135deg,#f9d423,#ff4e50);
+    background: linear-gradient(100deg,#ADDAFF,#103366);
     display: flex;
     flex-direction: column;
     justify-content: center;

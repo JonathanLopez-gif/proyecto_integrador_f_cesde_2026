@@ -1,11 +1,11 @@
-.login {
+.login-img {
     width: 400px;
     height: 400px;
     margin-right: 100px;
     animation: flotar 6s ease-in-out infinite;
 }
 
-.register {
+.register-img {
     width: 500px;
     height: 500px;
     margin-left: 100px;
@@ -22,9 +22,8 @@
 }
 
 /* ======== CONTENEDOR DEL FORMULARIO ======== */
-.form-registro {
-    /* Fondo del formulario con gradiente sutil en tonos oscuros */
-    background: linear-gradient(160deg, #1f1f1f, #2a2a2a);
+#form-register {
+    background: #FFFFFF;
 
     /* Borde muy fino y semitransparente para definir el contorno */
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -37,8 +36,7 @@
         inset 0 1px rgba(255, 255, 255, 0.05), /* brillo interno suave */
         0 8px 24px rgba(0, 0, 0, 0.4);        /* sombra externa */
 
-    /* Espaciado interno cómodo */
-    padding: 2rem;
+    padding: 10px;
 
     /* Ancho fijo pero centrado y visualmente equilibrado */
     width: 340px;
@@ -54,7 +52,7 @@
 }
 
 /* ======== EFECTO HOVER DEL FORMULARIO ======== */
-.form-registro:hover {
+#form-register:hover {
     /* Aumenta ligeramente la sombra externa para simular reflejo metálico */
     box-shadow:
         inset 0 1px rgba(255, 255, 255, 0.1),
@@ -65,18 +63,17 @@
 }
 
 /* ======== TÍTULO DEL FORMULARIO ======== */
-.form-registro h2 {
+#form-register h2 {
     /* Centrado horizontal */
     text-align: center;
 
     /* Separación inferior equilibrada */
-    margin-bottom: 1.5rem;
+    margin-bottom: 50px;
 
-    /* Color claro para destacar sobre fondo oscuro */
-    color: #f3f4f6;
+    color: #005599;
 
     /* Peso de fuente fuerte pero no excesivo */
-    font-weight: 600;
+    font-weight: 500;
 
     /* Espaciado sutil entre letras */
     letter-spacing: 0.5px;
@@ -86,52 +83,45 @@
 }
 
 /* ======== ETIQUETAS DE LOS CAMPOS ======== */
-.form-registro label {
+#form-register label {
     /* Mostrar cada etiqueta en su propia línea */
-    display: block;
-
-    /* Separación respecto al campo siguiente */
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
     margin-bottom: 6px;
-
-    /* Peso medio para legibilidad */
     font-weight: 500;
-
-    /* Color gris claro para buen contraste sin ser demasiado brillante */
-    color: #d1d5db;
-
-    /* Tamaño de fuente más pequeño que el texto principal */
-    font-size: 0.9rem;
+    color: #005599;
+    font-size: 20px;
 }
 
 /* ======== CAMPOS DE ENTRADA ======== */
-.form-registro input {
+#form-register input {
     /* Ocupa todo el ancho del contenedor */
     width: 100%;
 
     /* Espaciado interno equilibrado */
-    padding: 10px 12px;
+    padding: 12px;
 
-    /* Fondo más oscuro para contrastar con el formulario */
-    background: #141414;
+    background: #005599;
 
     /* Borde gris metálico sutil */
     border: 1px solid #3a3a3a;
 
     /* Bordes redondeados suaves */
-    border-radius: 8px;
+    border-radius: 20px;
 
     /* Texto blanco para buen contraste */
-    color: #fff;
+    color: #FFFFFF;
 
     /* Tamaño de fuente adecuado para formularios modernos */
-    font-size: 0.95rem;
+    font-size: 15px;
 
     /* Transiciones suaves en foco y hover */
     transition: all 0.25s ease;
 }
 
 /* ======== EFECTO CUANDO EL CAMPO ESTÁ EN FOCO ======== */
-.form-registro input:focus {
+#form-register input:focus {
     /* Borde de color violeta moderno al hacer clic */
     border-color: #818cf8;
 
@@ -143,37 +133,52 @@
 }
 
 /* ======== PLACEHOLDER ======== */
-.form-registro input::placeholder {
+#form-register input::placeholder {
     /* Color gris suave, discreto pero visible */
     color: #9ca3af;
 }
 
+/* ======== LINKS ======== */
+#la {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #005599;
+    transition: all 0.3s ease;
+}
+
+#la:hover {
+    color: #6d28d9;
+    transform: translateY(-2px);
+}
+
 /* ======== BOTÓN PRINCIPAL ======== */
-.form-registro button {
-    /* Ocupa todo el ancho del formulario */
-    width: 100%;
+#form-register button {
 
     /* Espaciado interno cómodo */
-    padding: 12px;
+    padding: 10px 25px;
 
     /* Margen superior para separarlo del campo anterior */
-    margin-top: 1.2rem;
+    margin: 25px auto ;
+
+    display: block;
 
     /* Sin borde visible */
     border: none;
 
     /* Bordes redondeados consistentes con los campos */
-    border-radius: 8px;
+    border-radius: 30px;
 
-    /* Gradiente moderno entre tonos violeta y azul eléctrico */
-    background: linear-gradient(135deg, #6366f1, #7c3aed);
+    background: #005599;
 
     /* Texto blanco brillante */
     color: white;
 
     /* Fuente ligeramente más grande y con peso */
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 20px;
 
     /* Cursor de mano para indicar clic */
     cursor: pointer;
@@ -183,7 +188,7 @@
 }
 
 /* ======== EFECTO HOVER DEL BOTÓN ======== */
-.form-registro button:hover {
+#form-register button:hover {
     /* Cambia el gradiente para dar sensación de movimiento metálico */
     background: linear-gradient(135deg, #4f46e5, #6d28d9);
 
@@ -191,7 +196,7 @@
     transform: translateY(-2px);
 }
 
-.registro {
+.register {
     text-decoration: none;
     color: white;
 }
@@ -248,6 +253,46 @@
    - Easing: cubic-bezier(0.25, 0.8, 0.25, 1) → curva personalizada que simula un rebote natural.
    - La animación ocurre una sola vez al cargar el formulario.
 */
-.form-registro {
+#form-register {
     animation: fadeInBounce 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.contenedor-role {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.select-moderno {
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #005599;
+    color: #9ca3af;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+
+    /* Quita el estilo por defecto del navegador */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* Flecha personalizada */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 24 24'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+/* Hover */
+.select-moderno:hover {
+    border-color: #4f46e5;
+}
+
+/* Focus (cuando haces clic) */
+.select-moderno:focus {
+    outline: none;
+    border-color: #6d28d9;
+    box-shadow: 0 0 5px rgba(109, 40, 217, 0.4);
 }

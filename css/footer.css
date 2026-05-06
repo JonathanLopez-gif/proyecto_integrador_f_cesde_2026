@@ -1,0 +1,32 @@
+footer { 
+    color: #005599; 
+    width: 100%; 
+    padding: 0px 10px 0px 10px;
+    position: relative;
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;          
+    background-color: #ffffff;
+}
+
+#redes {
+    display: flex; 
+    gap: 30px;
+}
+
+.red {
+    color: #005599; 
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.red:hover {
+    transform: translateY(-2px);
+}
+
+#rights {
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
